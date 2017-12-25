@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block page_content %}
+<div>
+    <img src="{{url_for('static',filename='index1.jpg')}}" class="img-rounded">
+
+   <div style="margin:0 auto;text-align: center">
+        <span class="label label-info" style="margin-top:30px;margin-bottom:30px">
+        求是大讲堂
+        </span>
+        <pre style="margin:0 auto;width:500px">    紫金港校区西区的求是书院文化元素建筑群位于西区的东部，南临西区中心湖面，由浙江大学建筑设计研究院设计，建设规模为8133平方米。设计单位在尊重场地现状的前提下，对“求是书院”的历史进行了考察，中间的求是大讲堂是整个建筑群的主体，采用古代传统的歇山建筑形式，加重仪式感；西迁接待厅和校史陈列馆则以园林院落的方式组织在一起，与主体建筑合为一个建筑群。该建筑群集学术讲座、校史展示、文化表演、校务活动、学术交流等多种功能于一体，设计体现了主殿、厢房和廊道的古代建筑特征，结合自然地形和水系，既是 浙大文化的传承，又是 校园内独特的景观。 求是大讲堂建筑群位于浙大紫金港整校区的中心地带临湖而建建设用地面积25000平方米，设计总建筑面积约8133平方米。建筑群由两个院落和数个建筑围合而成，其中求是大讲堂是整个建筑群的主体，采用古代传统的歇山顶建筑形式，外观与曲阜孔庙很是接近,并同时建有广场和铜门楼.</pre>
+        <p>
+
+    </p></div>
+
+
+<div style="text-align: center">
+ <a class="btn btn-lg btn-success" role="button" href="{{ url_for('main.next2') }}">点我继续探索</a>
+</div>
+</div>
+
+
+{% endblock %}
